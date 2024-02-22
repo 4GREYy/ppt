@@ -120,14 +120,14 @@ knitr::include_graphics("img/TIRSapp3.jpg")
 
 * The two thermal bands of TIRS help measure Earth's surface temperature, which is important for agriculture (assessing crop health and irrigation needs), water resource management, and understanding urban heat island effects.
 
-Development direction:
+## Future perspectives
 
 The integration of OLI and TIRS data with data from other sources, such as drones, ground sensors, and future satellite missions, will likely enhance the resolution and accuracy of Earth observations. Furthermore, advancements in data processing, machine learning, and artificial intelligence will enable more sophisticated analysis and predictive modeling, expanding the potential applications of Landsat data in addressing global environmental and societal challenges.
 
 ---
 # Conclusion amd Future perspectives
-## 
-The data from OLI and TIRS sensors hold immense potential for future work in several areas:
+
+Possible future applications of OLI and TIRS data in different fields:
 
 * Climate change monitoring: Continuous observation of changes in the Earth's surface and temperature variations can provide valuable insights into the impacts of climate change, contributing to climate modelling and mitigation strategies.
 

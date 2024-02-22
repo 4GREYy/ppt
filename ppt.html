@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introduction of OLI and TIRS</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yilun Xu" />
+    <script src="libs/header-attrs-2.25/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Introduction of OLI and TIRS
+]
+.subtitle[
+## two sensors of Landsat 8
+]
+.author[
+### Yilun Xu
+]
+.date[
+### 2024/02/04 (updated: 2024-02-22)
+]
+
+---
+
+
+# Satellite introduction
+
+## Landsat 8 source
+
+.pull-left[
+
+  Landsat 8 was launched on 11 February 2013 as a joint Earth observation satellite of the United States Geological Survey (USGS) and the National Aeronautics and Space Administration (NASA). 
+  
+  It is the eighth satellite in the Landsat series and is designed to continue a surface observation record that spans more than four decades.
+]
+
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/Landsat8.jpg" alt="(Landsat8, Source from &amp;quot;https://en.wikipedia.org/wiki/Landsat_8&amp;quot;)" width="70%" /&gt;
+&lt;p class="caption"&gt;(Landsat8, Source from "https://en.wikipedia.org/wiki/Landsat_8")&lt;/p&gt;
+&lt;/div&gt;
+]
+
+
+
+---
+# OLI and TIRS introduction
+
+Landsat 8 carries two primary sensors: 
+
+* the Operational Land Imager (OLI)  
+
+* the Thermal Infrared Sensor (TIRS).
+
+
+### OLI:
+.pull-left[
+  The OLI sensor provides nine spectral bands.
+  
+  Including a coastal/aerosol band, three visible bands, a near-infrared band, two short-wave infrared bands, and a panoramic band with a spatial resolution of 30 m and a panoramic band of 15 m.
+]
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/OLI.jpg" alt="(OLI, Source from wikipedia)" width="90%" /&gt;
+&lt;p class="caption"&gt;(OLI, Source from wikipedia)&lt;/p&gt;
+&lt;/div&gt;
+]
+
+---
+# OLI and TIRS introduction
+
+## TIRS
+
+
+  The TIRS sensor provides two thermal infrared bands for surface temperature measurements with a spatial resolution of 100 m, but is typically resampled to 30 m in data processing.
+
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/TIRS.jpg" alt="TIRS(Ali, S. A. et al., 2023)" width="50%" /&gt;
+&lt;p class="caption"&gt;TIRS(Ali, S. A. et al., 2023)&lt;/p&gt;
+&lt;/div&gt;
+
+---
+# Application example 1
+
+## Using OLI identifying Crops
+Landsat-8 OLI satellite images were used as the data source, and three classification methods, namely Random Forest Classification (RFC), Support Vector Machine (SVM), and Maximum Likelihood Classification (MLC), were also combined to accurately extract the area and distribution of winter wheat cultivation in Ushi County, Xinjiang Uygur Autonomous Region(Li, X. et al., 2021).
+
+
+.pull-left[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/OLIapp1.jpg" alt="(Landsat 8 OLI image and distribution of ground sample in study area.)" width="60%" /&gt;
+&lt;p class="caption"&gt;(Landsat 8 OLI image and distribution of ground sample in study area.)&lt;/p&gt;
+&lt;/div&gt;
+]
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/OLIapp2.jpg" alt="(Classification results by three methods based on original image.)" width="120%" /&gt;
+&lt;p class="caption"&gt;(Classification results by three methods based on original image.)&lt;/p&gt;
+&lt;/div&gt;
+]
+
+---
+# Application example 2
+
+## Using Landsat-8 OLI/TIRS to assess the Urban Heat Island (UHI)
+
+Spatial distribution of urban heat island (UHI) in Bogor, Indonesia was assessed using thermal data (Band-10) from Landsat-8 OLI/TIRS.
+
+.pull-left[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/TIRSapp1.jpg" alt="(The study area: (a) Location of Bogor City to the capital of Jakarta, (b) The study area with false-colour of Landsat-8 OLI/TIRS in May 2021.)" width="120%" /&gt;
+&lt;p class="caption"&gt;(The study area: (a) Location of Bogor City to the capital of Jakarta, (b) The study area with false-colour of Landsat-8 OLI/TIRS in May 2021.)&lt;/p&gt;
+&lt;/div&gt;
+]
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/TIRSapp2.jpg" alt="(Distribution maps of (a) Normalized Difference Vegetation Index (NDVI); (b) Land Surface Temperature (LST).)" width="120%" /&gt;
+&lt;p class="caption"&gt;(Distribution maps of (a) Normalized Difference Vegetation Index (NDVI); (b) Land Surface Temperature (LST).)&lt;/p&gt;
+&lt;/div&gt;
+]
+
+---
+# Application example 2
+
+## Using Landsat-8 OLI/TIRS to assess the Urban Heat Island (UHI)
+
+Landsat 8 OLI/TIRS was successfully implemented to identify UHI by NDVI and LST extraction.
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/TIRSapp3.jpg" alt="(UHI distribution)" width="40%" /&gt;
+&lt;p class="caption"&gt;(UHI distribution)&lt;/p&gt;
+&lt;/div&gt;
+---
+# Conclusion amd Future perspectives
+
+* The broad spectral coverage of OLI allows for detailed analyses of land and coastal areas, vegetation health, water bodies, and atmospheric conditions.
+
+* The two thermal bands of TIRS help measure Earth's surface temperature, which is important for agriculture (assessing crop health and irrigation needs), water resource management, and understanding urban heat island effects.
+
+Development direction:
+
+The integration of OLI and TIRS data with data from other sources, such as drones, ground sensors, and future satellite missions, will likely enhance the resolution and accuracy of Earth observations. Furthermore, advancements in data processing, machine learning, and artificial intelligence will enable more sophisticated analysis and predictive modeling, expanding the potential applications of Landsat data in addressing global environmental and societal challenges.
+
+---
+# Conclusion amd Future perspectives
+The data from OLI and TIRS sensors hold immense potential for future work in several areas:
+
+* Climate change monitoring: Continuous observation of changes in the Earth's surface and temperature variations can provide valuable insights into the impacts of climate change, contributing to climate modelling and mitigation strategies.
+
+
+* Agricultural management: Enhanced monitoring of crop health, soil moisture and irrigation practices can lead to more sustainable and efficient agricultural practices.
+
+
+* Disaster response and management: Rapid assessment of areas affected by natural disasters such as floods, fires and hurricanes can improve response strategies and mitigate impacts.
+
+
+* Urban planning: Data on urban sprawl, green spaces and heat islands can inform smarter, more sustainable urban planning decisions.
+
+
+* Water management: Better understanding of surface water distribution, snowpack levels and evapotranspiration rates can inform water conservation strategies and policies
+---
+U.S. Geological Survey, 2023. Landsat 8. Available at: https://www.usgs.gov/landsat-missions/landsat-8 [Accessed 4 February 2024].
+
+Wikipedia contributors, 2023. Landsat 8. Wikipedia. Available at: https://en.wikipedia.org/wiki/Landsat_8 [Accessed 4 February 2024].
+
+Li, X. et al. (2021) APPLICATION OF RANDOM FOREST IN IDENTIFYING WINTER WHEAT USING LANDSAT8 IMAGERY. Engenharia agrícola. [Online] 41 (6), 619–633.
+
+Karyati, N. E. et al. (2022) Application of Landsat-8 OLI/TIRS to assess the Urban Heat Island (UHI). IOP conference series. Earth and environmental science. [Online] 1109 (1), 012069-.
+
+Ali, S. A. et al. (2023) Retrieval of Land Surface Temperature from Landsat 8 OLI and TIRS: A Comparative Analysis Between Radiative Transfer Equation-Based Method and Split-Window Algorithm. Remote Sensing in Earth Systems Sciences. [Online] 6 (1–2), 1–21.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
